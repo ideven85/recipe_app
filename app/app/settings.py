@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "core",
+    "main"
+
 ]
 
 MIDDLEWARE = [
@@ -79,10 +81,10 @@ WSGI_APPLICATION = "app.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "HOST": os.environ.get("DB_HOST"),
-        "NAME": os.environ.get("DB_NAME"),
-        "USER": os.environ.get("DB_USER"),
-        "PASSWORD": os.environ.get("DB_PASS"),
+        #"HOST": os.environ.get("DB_HOST"),
+        "NAME": "recipe_app", #os.environ.get("DB_NAME"),
+        "USER": "deven",#os.environ.get("DB_USER"),
+        "PASSWORD": "728000",#os.environ.get("DB_PASS"),
     }
 }
 
